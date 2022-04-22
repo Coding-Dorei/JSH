@@ -1,0 +1,55 @@
+nav > a{
+    text-decoration: none;
+    color: lightslategrey;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+nav{
+    background-color: beige;
+    height: 10%;
+    width: 100%;
+    position: absolute 0 0;
+}
+header{
+    text-align: center;
+    background-color: beige;
+    color: lightslategray;
+}
+#cry{
+    transition: transform 3s;
+}
+#cry:hover{
+    transform:rotate(7200deg);
+}
+#dance{
+    animation-name: shadowRGB;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    margin: 30px;
+}
+@keyframes shadowRGB {
+    0%{box-shadow: 0px 0px 30px red;}
+    25%{box-shadow: 0px 0px 30px green;}
+    50%{box-shadow: 0px 0px 30px blue;}
+    75%{box-shadow: 0px 0px 30px green}
+    100%{box-shadow: 0px 0px 30px red;}
+}
+section{
+    margin-left: 10px;
+}
+#toTheTop{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+summary > h3{
+    display: inline;
+}
+table{
+    border: 2px;
+    border-style: solid;
+    border-color: cadetblue;
+}
+thead{
+    background-color: darkslateblue;
+}

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/style.css">
+    <title>Jeon-Syeon Archive</title>
+</head>
+<body style="background-color: beige;">
+    <nav id="top">
+        <a href="/">Home</a><a href="https://github.com/Coding-Dorei">GitHub</a>
+    </nav>
+    <header>
+        <h1>Jeon-Syeon Archive</h1>
+        <pre>심심해서 만들어본 Jeon-Syeon Archive입니다.&NewLine;공부하면서 배운 것들로 많은 기능들을 구현해보도록 하겠습니다&NewLine;&lt;Coding-Dorei&gt;</pre>
+    </header>
+    <section>
+        <h2>HTML</h2>
+        <details>
+            <summary><h3>iframe에 사진 띄우기</h3></summary>
+            <iframe src="" frameborder="0" name="photo" width="500px" height="500px"></iframe>
+            <ul>
+                <li><a href="../public/img/cry1.jpg" target="photo">cry</a></li>
+                <li><a href="../public/img/why.jpg" target="photo">why</a></li>
+                <li><a href="../public/img/img1.jpg" target="photo">no title</a></li>
+            </ul>
+        </details>
+        <details>
+            <summary><h3>성적표</h3></summary>
+            <table>
+                <thead>
+                    <tr>
+                        <th>과목명</th><th>학점</th><th>평점</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>자료구조및실습</td>
+                        <td rowspan="2">교수미게시</td>
+                        <td rowspan="2">교수미게시</td>
+                    </tr>
+                    <tr>
+                        <td>디지털시스템</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </details>
+        <details>
+            <summary><h3>폼</h3></summary>
+            <form action="/form/login" method="get">
+                <fieldset style="width: 20%; text-align: center;">
+                    <legend>Login</legend>
+                    <table style="display: inline-block;">
+                        <tr>
+                            <td><label for="uid">ID</label></td>
+                            <td><input type="text" name="uid"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="upw">PW</label></td>
+                            <td><input type="password" name="upw"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="facColor">Favorite Color</label></td>
+                            <td><input type="color" name="favColor"></td>
+                        </tr>
+                        <tfoot>
+                            <th colspan="3"><input style="width: 100%;" type="submit" value="send"></th>
+                        </tfoot>
+                    </table>
+                </fieldset>
+            </form>
+            <form action="/form/info" method="get">
+                <fieldset style="width: 20%;">
+                    <legend>Info</legend>
+                    <table>
+                        <tr>
+                            <td><label>name</label></td>
+                            <td><input type="text" name="name"></td>
+                        </tr>
+                        <tr>
+                            <td><label>age</label></td>
+                            <td><input type="number" name="age" min="1" max="100" step="1"></td>
+                        </tr>
+                        <tr>
+                            <td><label>Body Weight</label></td>
+                            <td><input type="range" name="weight" min="30" max="90" list="weight"></td>
+                            <datalist id="weight">
+                                <option value="30"></option>
+                                <option value="45"></option>
+                                <option value="60"></option>
+                                <option value="75"></option>
+                                <option value="90"></option>
+                            </datalist>
+                        </tr>
+                        <tr>
+                            <td><label for="jp">일식</label><input type="checkbox" name="일식" id="jp"></td>
+                            <td><label for="kr">한식</label><input type="checkbox" name="한식" id="kr"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="samsung">Samsung</label><input type="radio" name="elec" value="samsung"></td>
+                            <td><label for="apple">Apple<input type="radio" name="elec" value="apple"></label></td>
+                        </tr>
+                        <tfoot>
+                            <th><input type="submit" value="send"></th>
+                        </tfoot>
+                    </table>
+                </fieldset>
+            </form>
+        </details>
+    </section>
+    <section>
+        <h2>CSS</h2>
+        <a href="../public/style.css" style="text-decoration: none; color: lightslategray;">css source code</a>
+        <article>
+            <details>
+                <summary> <h3>rotate(7200deg)</h3> </summary>
+                <img src="../public/img/cry1.jpg" alt="" id="cry" height="100px" width="65px">
+            </details>
+        </article>
+        <article>
+            <details>
+                <summary><h3>자체발광</h3></summary>
+                <img src="../public/img/dance.gif" alt="" id="dance">
+            </details>
+        </article>
+    </section>
+    <section>
+        <h2>JavaScript</h2>
+        <article>
+
+        </article>
+    </section>
+    <a href="#top" id="toTheTop"><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ffreepngimg.com%2Fthumb%2Fweb_design%2F25043-1-up-arrow.png&f=1&nofb=1" alt="" height="20px" width="20px"></a>
+</body>
+</html>
